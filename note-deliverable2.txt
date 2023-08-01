@@ -1,0 +1,6 @@
+* Files submitted for Deliverable 2
+  
+ - Part 1 - System Structure Diagram - Section 2.1, p.3 of SRS document (Part 2)
+ - Part 2 - Written software requirements specification (SRS) - /doc/artifacts/Team Loyalty SRS Deliverable 2 - v1.0.pdf
+ - Part 3 - Project Implementation Phase Plan - Section 6.1, p.12 of SRS document (Part 2)
+ - Part 4 - Minutes updated in /doc/minutes

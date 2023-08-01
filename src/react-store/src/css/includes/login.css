@@ -1,0 +1,22 @@
+.error-message {
+  color: #ff0000;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.login-submit-button {
+  margin: 8px 0;
+}
+
+.paper {
+  padding: 20px;
+  height: 45vh;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.login-input {
+  margin-bottom: 5px;
+}

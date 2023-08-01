@@ -1,0 +1,637 @@
+{
+	"info": {
+		"_postman_id": "94fb461d-30e8-4e47-a2d3-69d045b14ec7",
+		"name": "Loyalty Stack APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All ProductLevels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/productlevels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productlevels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Brands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/brands",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Hierarchy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/producthierarchy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"producthierarchy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Warren\",\r\n    \"lastName\": \"Robinett\",\r\n    \"emailAddress\": \"warren.robinett@my.unt.edu\",\r\n    \"address\": \"200 Oak St\",\r\n    \"city\": \"Denton\",\r\n    \"state\": \"TX\",\r\n    \"country\": \"US\",\r\n    \"postal\": \"76201\",\r\n    \"phone\": \"214-555-8888\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/product?code=CX2646",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"product"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "CX2646"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"firstName\": \"Bobby\",\r\n    \"lastName\": \"Robinett\",\r\n    \"emailAddress\": \"warren.robinett@my.unt.edu\",\r\n    \"address\": \"200 Oak St\",\r\n    \"city\": \"Denton\",\r\n    \"country\": \"US\",\r\n    \"state\": \"TX\",\r\n    \"postal\": \"76201\",\r\n    \"phone\": \"214-555-8888\",\r\n    \"createDate\": \"2023-03-14T23:27:46.0937708\",\r\n    \"updateDate\": \"2023-03-14T23:27:46.0937708\",\r\n    \"name\": \"Warren Robinett\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Sales Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/1/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Sales Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"customerId\":1,\r\n\t\"grossAmount\":59.13,\r\n\t\"netAmount\":50.0,\r\n\t\"taxAmount\":4.13,\r\n\t\"shippingAndHandling\":5.0,\r\n\t\"discountAmount\":0.0,\r\n\t\"status\":\"A\",\r\n\t\"salesOrderDetails\":[\r\n\t\t{\r\n\t\t\t\"lineNumber\":1,\r\n\t\t\t\"productCode\":\"CX2675\",\r\n\t\t\t\"productName\":\"Ms. Pac-Man\",\r\n\t\t\t\"unitPrice\":50.0,\r\n\t\t\t\"quantity\":1,\r\n\t\t\t\"lineNetAmount\":50.0,\r\n\t\t\t\"lineTaxAmount\":4.13,\r\n\t\t\t\"lineDiscountAmount\":0.0,\r\n\t\t\t\"lineGrossAmount\":54.13,\r\n\t\t\t\"status\":\"A\"\r\n\t\t}\r\n\t],\r\n\t\"salesOrderTender\": {\r\n\t\t\"codeTender\": \"MC\",\r\n\t\t\"amount\": 59.13,\r\n\t\t\"paymentCardNumber\": \"4111111111111111\",\r\n\t\t\"paymentCardFirstName\": \"Brad\",\r\n\t\t\"paymentCardLastName\": \"Davis\",\r\n\t\t\"paymentCardZip\": \"76201\",\r\n\t\t\"codeAuth\": \"ABC123\",\r\n\t\t\"codeRef\": \"1234567890\"\r\n\t},\r\n\t\"salesOrderShippingAddress\": {\r\n\t\t\"firstName\": \"Brad\",\r\n\t\t\"lastName\": \"Davis\",\r\n\t\t\"address\": \"123 Main\",\r\n\t\t\"city\": \"Denton\",\r\n\t\t\"state\": \"TX\",\r\n\t\t\"country\": \"US\",\r\n\t\t\"postal\": \"76201\"\r\n\t},\r\n\t\"date\":\"2023-03-15T23:23:19.50045\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Filtered Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products?System=2600&Genre=MAZE&Brand=ATARI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "System",
+							"value": "2600"
+						},
+						{
+							"key": "Genre",
+							"value": "MAZE"
+						},
+						{
+							"key": "Brand",
+							"value": "ATARI"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"brad\", \r\n    \"password\": \"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer with Auth Header",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJicmFkIiwicm9sZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY3OTEwNTU1NSwiZXhwIjoxNjc5MTA5MTU1fQ.2mKspypL0Ph9Ofjlsdd0rsxfiAGG1OItiNa9xs0Jxv8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer Login Credentials",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"tyler\", \r\n    \"password\": \"password123\",\r\n    \"customerId\": 2,\r\n    \"roles\": [ \"ROLE_USER\" ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Logged In User Details with Auth Header",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJicmFkIiwicm9sZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY3OTEwNjYyNiwiZXhwIjoxNjc5MTEwMjI2fQ.3EsFZLxMIgODb9QzNWr8kDYNebAENOw3c3BdxVR6iKw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Orders By Customer Id with Auth Header",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJicmFkIiwicm9sZXMiOiJST0xFX1VTRVIsUk9MRV9BRE1JTiIsImlhdCI6MTY3OTEwOTg1MSwiZXhwIjoxNjc5MTEzNDUxfQ.T6YX8wzNFZpFhkpxAV371zvl_KGGmnZD4XAXnvgBq6k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/1/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Name Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/productsearch?name=pac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productsearch"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pac"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer Enroll in Loyalty",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Jerry\",\r\n    \"lastName\": \"Mouse\",\r\n    \"emailAddress\": \"jerry.mouse@my.unt.edu\",\r\n    \"address\": \"200 Oak St\",\r\n    \"city\": \"Denton\",\r\n    \"state\": \"TX\",\r\n    \"country\": \"US\",\r\n    \"postal\": \"76201\",\r\n    \"phone\": \"214-555-8888\",\r\n    \"joinLoyalty\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer Points Balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/1/pointsbalance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"1",
+						"pointsbalance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Available Offers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/offers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"offers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Loyalty Customer By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Redeem Points by Customer Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/1/redeempoints/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"1",
+						"redeempoints",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer Points History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/1/pointshistory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"1",
+						"pointshistory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

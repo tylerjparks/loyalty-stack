@@ -1,0 +1,13 @@
+.text-control {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box {
+  transition: 1s;
+}
+.box:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}

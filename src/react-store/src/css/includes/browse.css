@@ -1,0 +1,63 @@
+.games-container {
+  position: relative;
+  left: 90px;
+  margin-top: 10px;
+  margin-right: 90px;
+}
+
+.browse-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+}
+.dropdown {
+  font-style: italic;
+  margin-right: 25px;
+  z-index: 0;
+}
+
+.option {
+  font-style: normal;
+}
+
+.reset-filter-button {
+  font-style: italic;
+  background-color: #7b1fa2;
+  color: white;
+  margin-left: 0;
+}
+
+.filter-container {
+  margin-left: 100px;
+}
+
+.search-bar {
+  position: absolute;
+  right: 15px;
+  top: 63px;
+}
+
+.dropdown-recommendations {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  width: 205px;
+}
+
+.dropdown-recommendations:empty {
+  border: none;
+}
+
+.dropdown-recommendations-row {
+  cursor: pointer;
+  text-align: start;
+  z-index: 9999;
+  background-color: white;
+}
+
+.dropdown-recommendations-row:hover {
+  background-color: #7b1fa2;
+  color: white;
+}

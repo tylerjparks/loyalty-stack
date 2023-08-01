@@ -1,0 +1,6 @@
+* Files submitted for Deliverable 1
+  
+- Report:                     /doc/artifacts/Team Loyalty - Deliverable 1 - Project Proposal.pdf
+- PowerPoint Presentation:    /doc/artifacts/Team Loyalty - Deliverable 1 - Project Proposal Presentation.pptx
+- Presentation Video:         Too large for github.  Uploaded to Canvas.  
+      Also available at https://unt.zoom.us/rec/share/_24uGwZ6y66WrYY3M4ZLJTnXuxjxTUpBjVfKHtJBoxPor3FB46sgOEa9Kvw79kOC.JP0RMa7yejYl672_

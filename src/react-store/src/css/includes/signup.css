@@ -1,0 +1,16 @@
+.paper-signup {
+  padding-top: 20px;
+  width: 400px;
+  margin: 0 auto 10px auto;
+  margin-bottom: 5px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.signup-header {
+  margin: 0;
+}
+
+.signup-form {
+  margin: 5px;
+}
